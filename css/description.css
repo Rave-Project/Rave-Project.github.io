@@ -1,18 +1,26 @@
 .left {
     float: left;
     width: 33%;
-
 }
 
 .right {
     float: right;
     width: 33%;
-
 }
 
 .center {
     display: inline-block;
     margin: 0 auto;
     width: 34%;
+}
 
+.bordi {
+    border: 1px solid black;
+    border-color: chartreuse;
+}
+
+.mini-box {
+    background-color: rgb(78, 78, 78);
+    margin: 30px;
+    height: 400px;
 }
