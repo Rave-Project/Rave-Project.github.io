@@ -14,11 +14,11 @@
     width: 34%;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 600px) {
     .right {
         margin: 4%;
         width: 90%;
-        height: 400px;
+        height: max-content;
         float: none;
         display: inline-block;
     }
@@ -26,7 +26,7 @@
     .left {
         margin: 4%;
         width: 90%;
-        height: 400px;
+        height: max-content;
         float: none;
         display: inline-block;
     }
@@ -34,7 +34,7 @@
     .center {
         margin: 4%;
         width: 90%;
-        height: 400px;
+        height: max-content;
         float: none;
         display: inline-block;
     }   
@@ -42,6 +42,8 @@
 
 .mini-box {
     background-color: black;
+    margin-top: auto;
+    padding: auto;
     margin: 30px;
     height: 100%;
     position: relative;
@@ -54,7 +56,7 @@ div.mini-box h1 {
     font-size: 35px;
     text-align: center;
     margin: 10%;
-    height: 84px;
+    height: 39%;
 }
 
 .desc {
@@ -62,6 +64,7 @@ div.mini-box h1 {
     font-size: 16px;
     text-align: center;
     margin: 10px;
+    height: auto;
 }
 
 a {
