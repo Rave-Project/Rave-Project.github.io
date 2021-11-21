@@ -14,7 +14,7 @@
     width: 34%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1300px) {
     .right {
         margin: 4%;
         width: 90%;
@@ -37,7 +37,7 @@
         height: 400px;
         float: none;
         display: inline-block;
-    }
+    }   
 }
 
 .mini-box {
@@ -53,14 +53,15 @@
 div.mini-box h1 {    
     font-size: 35px;
     text-align: center;
-    margin: 0 auto;
-    height: 144px;
+    margin: 10%;
+    height: 54px;
 }
 
 .desc {
     color: blanchedalmond;
     font-size: 16px;
     text-align: center;
+    margin: 10px;
 }
 
 a {
