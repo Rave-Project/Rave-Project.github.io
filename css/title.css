@@ -13,8 +13,8 @@ h2 {
 /*  margin: auto; */
 }
 
-#first-title {
-    height: 70%;
+#box {
+    height: 100%;
     background: black; /* if wallpaper not load */
 
     /* use all size of body */
@@ -28,4 +28,13 @@ h2 {
     background-repeat: no-repeat;
 /*  background-attachment: fixed; */
     background-size: cover;
+}
+
+.first-title {
+    height: 500px;
+}
+
+.description {
+    background-color: black;
+    height: 100%;
 }
