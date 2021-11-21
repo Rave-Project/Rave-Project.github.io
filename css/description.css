@@ -14,16 +14,13 @@
     width: 34%;
 }
 
-.bordi {
-    border: 1px solid black;
-    border-color: chartreuse;
-}
-
 .mini-box {
-    background-color: rgb(78, 78, 78);
+    background-color: black;
     margin: 30px;
     height: 400px;
     position: relative;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
 }
 
 div.mini-box h1 {    
