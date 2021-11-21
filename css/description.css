@@ -14,10 +14,36 @@
     width: 34%;
 }
 
+@media only screen and (max-width: 600px) {
+    .right {
+        margin: 4%;
+        width: 90%;
+        height: 400px;
+        float: none;
+        display: inline-block;
+    }
+
+    .left {
+        margin: 4%;
+        width: 90%;
+        height: 400px;
+        float: none;
+        display: inline-block;
+    }
+
+    .center {
+        margin: 4%;
+        width: 90%;
+        height: 400px;
+        float: none;
+        display: inline-block;
+    }
+}
+
 .mini-box {
     background-color: black;
     margin: 30px;
-    height: 400px;
+    height: 100%;
     position: relative;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 1px 4px rgba(0,0,0,.6);
