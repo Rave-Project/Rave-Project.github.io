@@ -43,6 +43,14 @@ iframe {
 
 @media only screen and (max-width: 1300px) {
 
+    .ravehz-right {
+        width: 300px;
+        margin-right: 20%;
+        height: max-content;
+        float: none;
+        display: inline-block;
+    }
+
     iframe {
         margin: 2%;
         width: 430px;
