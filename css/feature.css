@@ -1,3 +1,7 @@
+.padding-fix {
+    padding: 10% 10% 10% 10%;
+}
+
 .feature {
     border-top-color: rgb(255, 174, 0); 
     border-top-style: solid;
@@ -69,6 +73,10 @@
 }
 
 @media only screen and (max-width: 950px) {
+    .padding-fix {
+        padding: 17% 2% 17% 2%;
+    }
+
     .fix-center {
         text-align: center;
     }
