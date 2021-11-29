@@ -86,6 +86,7 @@ div.mini-box h1 {
 }
 
 .link-ref {
+    border: none;
     background-color: rgb(248, 196, 26);
     width: 100px;
     color: black;

@@ -21,6 +21,11 @@
     <link rel="stylesheet" type="text/css" href="css/description.css" />
     <link rel="stylesheet" type="text/css" href="css/feature.css" />
     <head>
+        <style>
+            .hide{
+                display: none;
+            }
+        </style>
         <body>
             <div id="box">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -182,11 +187,18 @@
                                     Changes
                                 </p>
                             </a>
-                            <a href="https://sourceforge.net/projects/raverules/files/Rave%20Kernel/" style="text-decoration: none; color: rgb(0, 0, 0);" target="_blank">
-                                <p class="link-ref bounce" style="font-size: 20px;">
+                            <a style="text-decoration: none; color: rgb(0, 0, 0);">
+                                <button id="pulsante" onclick="opendownload()" class="link-ref bounce" style="font-size: 20px;">
                                     Download
-                                </p>
+                                </button>
                             </a>
+                            <div class="open hide">
+                                <!--
+                                    link for single version
+                                -->
+                            </div>
+                            <div class="close">
+                            </div>
                         </div>
                     </div>
                     <div class="right">
@@ -211,4 +223,5 @@
             </div>
         </body>
     </head>
+    <script src="js/main.js"></script>
 </html>
