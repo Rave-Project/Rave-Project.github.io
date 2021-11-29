@@ -14,9 +14,9 @@
     width: 34%;
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1300px) and (min-height: 1000px) {
     .description {
-        height: 600px;
+        height: 1000px;
     }
 }
 

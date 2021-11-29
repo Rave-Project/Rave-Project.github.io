@@ -1,5 +1,5 @@
 .padding-fix {
-    padding: 10% 10% 10% 10%;
+    padding: 1% 1% 1% 1%;
 }
 
 .feature {
@@ -37,7 +37,7 @@
 }
 
 .feature ul {
-    width: 400px;
+    width: max-content;
     text-align: none;
     margin: 0;
 }
@@ -74,7 +74,7 @@
 
 @media only screen and (max-width: 950px) {
     .padding-fix {
-        padding: 10% 2% 10% 2%;
+        padding: 10px 2px 10px 2px;
     }
 
     .fix-center {
@@ -88,7 +88,7 @@
     }
 
     .feature ul {
-        width: 400px;
+        width: 500px;
         text-align: none;
         margin: auto;
     }    
@@ -118,4 +118,17 @@
     .feature {
         height: 800px;
     }
+}
+
+@media only screen and (max-width: 600px) {
+    .feature ul {
+        width: 300px;
+        text-align: none;
+        margin: auto;
+    }
+
+    iframe, .feature img {
+        width: 287px;
+        height: 161px;
+    }    
 }
