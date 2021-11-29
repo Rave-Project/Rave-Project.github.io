@@ -1,5 +1,5 @@
 .padding-fix {
-    padding: 1% 1% 1% 1%;
+    padding: 10% 10% 10% 10%;
 }
 
 .feature {
@@ -131,4 +131,10 @@
         width: 287px;
         height: 161px;
     }    
+}
+
+@media only screen and (min-width: 1300px) and (min-height: 1000px) {
+    .feature {
+        height: 900px;
+    }
 }
