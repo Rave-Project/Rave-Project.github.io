@@ -80,7 +80,7 @@
 
 @media only screen and (max-width: 950px) {
     .padding-fix {
-        padding: 17% 2px 17% 2px;
+        padding: 10% 2px 10% 2px;
     }
 
     .fix-center {
@@ -90,7 +90,7 @@
     .feature {
         background-color: rgb(36, 36, 36);
         width: 100%;
-        height: 300px;
+        height: 470px;
     }
 
     .feature ul {
@@ -134,7 +134,11 @@
     iframe, .feature img {
         width: 287px;
         height: 161px;
-    }    
+    }
+
+    .feature {
+        height: 600px;
+    }
 }
 
 @media only screen and (min-width: 1300px) and (min-height: 1000px) {
