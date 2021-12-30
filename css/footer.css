@@ -1,0 +1,12 @@
+footer {
+    background-color: #f5f6f7;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 300px;
+}
+
+@media only screen and (max-width: 950px) {
+    footer {
+        height: max-content;
+    }
+}
