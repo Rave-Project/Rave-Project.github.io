@@ -14,6 +14,13 @@
     width: 34%;
 }
 
+@media only screen and (min-width: 1000px) {
+    .description {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
 @media only screen and (min-width: 1300px) and (min-height: 1000px) {
     .description {
         height: 1000px;
@@ -48,14 +55,13 @@
 }
 
 .mini-box {
-    background-color: black;
     margin-top: auto;
     padding: auto;
     margin: 30px;
     height: 100%;
     position: relative;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+/*  box-shadow: 0 1px 4px rgba(0,0,0,.6); */
     text-align: center;
 
     transition-duration: 1s;
@@ -70,7 +76,8 @@
     -o-transition-property: -o-transform;
 }
 
-div.mini-box h1 {    
+div.mini-box h1 {
+    color: #1c1e21;
     font-size: 35px;
     text-align: center;
     margin: 10%;
@@ -78,7 +85,7 @@ div.mini-box h1 {
 }
 
 .desc {
-    color: blanchedalmond;
+    color: #1c1e21;
     font-size: 16px;
     text-align: center;
     margin: 10px;
@@ -87,10 +94,10 @@ div.mini-box h1 {
 
 .link-ref {
     border: none;
-    background-color: rgb(248, 196, 26);
+    background-color: rgb(72, 59, 255);
     width: 100px;
-    color: black;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 6px 6px 6px 6px;
+    cursor: pointer;
     display: inline-block;
     font-size: 26px;
 

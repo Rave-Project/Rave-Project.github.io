@@ -1,5 +1,5 @@
 h1 {
-    color: white;
+    color: #444950;
     font-size: 70px;
     height: 70px;
     margin-left: 20px;
@@ -7,24 +7,28 @@ h1 {
 
 h2 {
     margin-left: 30px;
-    color: white;
+    color: #444950;
     font-size: 30px;
     height: fit-content;
 /*  margin: auto; */
 }
 
+
+@media only screen and (min-width: 800px) {
+    .first-title h1, .first-title h2 {
+        padding-left: 18px;
+    }
+}
+
 #box {
     height: 100%;
-    background: black; /* if wallpaper not load */
-
+    background-color: white;
     /* use all size of body */
     position: absolute;
     top: 0px;
     right: 0px;
     left: 0px;
-
     background-position: center;
-    background-image: url(../assets/wallpaper.png);
     background-repeat: no-repeat;
 /*  background-attachment: fixed; */
     background-size: cover;
@@ -32,15 +36,12 @@ h2 {
 }
 
 .first-title {
-    height: 560px;
+    padding-top: 60px;
+    height: 300px;
 }
 
 @media only screen and (min-width: 950px) {
     .description {
         height: 70%;
     }
-}
-
-.description {
-    background-color: rgb(36, 36, 36);
 }
