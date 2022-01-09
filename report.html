@@ -18,7 +18,7 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="assets/ravelogo.png">
     <link rel="stylesheet" type="text/css" href="css/changelog.css" />
-    <link rel="stylesheet" type="text/css" href="css/footer-fix.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/description.css" />
 
     <body>
@@ -59,19 +59,39 @@
 
         <div style="padding-top: 10px;">
             <div class="principale">
-                <h1>
-                    Credits
+                <h1 style="height: fit-content">
+                    How to report issues?
                 </h1>
                 <p>
-                    I couldn't have done anything by myself, of course. Credits to:
+                    If you find problems remember to follow this guide.
                 </p>
-                <ul>
-                    <li><a href="https://github.com/Yasir-siddiqui">Yasir</a></li>
-                    <li><a href="https://github.com/VoidDev-0">VoidDev</a></li>
-                    <li><a href="https://github.com/kjjjnob">Sebastian</a></li>
-                    <li><a href="https://github.com/kerneltoast">Kernel Toast</a></li>
-                    <li><a href="https://github.com/kdrag0n/proton-clang">Kdrag0n</a></li>
-                </ul>
+                <h2 style="padding-top: 50px; height: fit-content;">
+                    Get the log
+                </h2>
+                <p>
+                    To understand the cause of the problems I need to see the debug log. Can:
+                    <ul>
+                        <li>Get the kernel logs via FrancoKernel Manager</li>
+                        <li>Use MatLog</li>
+                    </ul>
+                    If the problem is the device not booting, check that you have installed the correct version. After doing this:
+                    <ul>
+                        <li>
+                            <div style="width: 350px;">
+                                Using ADB:
+                                <ol style="background-color: #f5f6f7;">
+                                    <li>adb devices</li>
+                                    <li>adb logcat | tee log1.txt </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li>Get the file /proc/last_kmsg from recovery</li>
+                    </ul>
+                </p>
+                <p style="padding-top: 80px; height: fit-content;">
+                    After you get these files, post them to my support group specifying your problem.
+                    <br>Without the logs any problems will be ignored.
+                </p>
             </div>
         </div>
         <footer>
