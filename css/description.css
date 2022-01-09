@@ -1,3 +1,46 @@
+.left {
+    float: left;
+    width: 33%;
+}
+
+.right {
+    float: right;
+    width: 33%;
+}
+
+.center {
+    display: inline-block;
+    margin: 0 auto;
+    width: 34%;
+}
+
+@media only screen and (max-width: 950px) {
+
+    .right {
+        margin: 4%;
+        width: 90%;
+        height: max-content;
+        float: none;
+        display: inline-block;
+    }
+
+    .left {
+        margin: 4%;
+        width: 90%;
+        height: max-content;
+        float: none;
+        display: inline-block;
+    }
+
+    .center {
+        margin: 4%;
+        width: 90%;
+        height: max-content;
+        float: none;
+        display: inline-block;
+    }
+}
+
 .mini-box {
     margin-top: auto;
     padding: auto;
