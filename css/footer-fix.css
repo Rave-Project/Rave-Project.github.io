@@ -5,6 +5,13 @@ footer {
     height: 300px;
 }
 
+.view {
+    position:fixed;
+    bottom:0px;
+    right: 3px;
+    z-index:999999;
+}
+
 @media only screen and (max-width: 950px) {
     footer {
         height: max-content;
