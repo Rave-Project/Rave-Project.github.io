@@ -5,6 +5,13 @@ footer {
     height: 300px;
 }
 
+.view-download {
+    position:fixed;
+    bottom: 0px;
+    left: 150px;
+    z-index:999999;
+}
+
 .view {
     position:fixed;
     bottom:0px;
