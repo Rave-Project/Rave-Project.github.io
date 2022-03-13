@@ -25,11 +25,15 @@
 
 .feature .left {
     float: left;
+    padding-left: 5%;
+    padding-right: 5%;
     width: 50%;
 }
 
 .feature .right {
     float: right;
+    padding-right: 5%;
+    padding-left: 5%;
     width: 50%;
 }
 
