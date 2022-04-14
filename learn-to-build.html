@@ -1,160 +1,184 @@
 <!doctype html>
 <html lang="en">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Peppe289">
-    <meta property="og:title" content="Rave Environment">
-    <meta name="description" content="Easily learn how to build custom kernels">
-    <meta property="og:site_name" content="Learn to build">
-    <title>Learn to build</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="author" content="Peppe289">
+<meta property="og:title" content="Rave Environment">
+<meta name="description" content="Easily learn how to build custom kernels">
+<meta property="og:site_name" content="Learn to build">
+<title>Learn to build</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="assets/ravelogo.png">
-    <link rel="stylesheet" type="text/css" href="css/changelog.css" />
-    <link rel="stylesheet" type="text/css" href="css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="css/description.css" />
-    
-    <head>
-        <body>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- Begin SF Tag -->
-            <div class="sf-root hide-orizontal" data-id="3308011" data-badge="oss-sf-favorite-black" data-metadata="achievement=oss-sf-favorite" style="width: 25px">
-                <a href="https://sourceforge.net/projects/raverules/" target="_blank">Rave</a>
-            </div>
-            <script>(function () {var sc=document.createElement('script');sc.type='text/javascript';sc.async=true;sc.src='https://b.sf-syn.com/badge_js?sf_id=3308011';var p=document.getElementsByTagName('script')[0];p.parentNode.insertBefore(sc, p);})();
-            </script>
-            <!-- End SF Tag -->
-                <a class="navbar-brand" href="index.html"><img src="assets/ravelogo.png" style="height: 34px; width: 35px;"> Rave</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Channels
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="https://t.me/RaveLavenderRelease">Lavender (Redmi note 7)</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="https://t.me/Peppe289Project">Personal channel</a>
-                        </div>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="index.html#download">Download</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="learn-to-build.html">Learn to build</a>
-                      </li>
-                  </ul>
-                </div>
-            </nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="assets/ravelogo.png">
+<link rel="stylesheet" type="text/css" href="css/changelog.css" />
+<link rel="stylesheet" type="text/css" href="css/footer.css" />
+<link rel="stylesheet" type="text/css" href="css/description.css" />
 
-            <div style="padding-top: 10px;">
-                <div class="principale">
-                    <h1 style="height: fit-content;">
-                        How to build custom kernel?
+<head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Begin SF Tag -->
+        <div class="sf-root hide-orizontal" data-id="3308011" data-badge="oss-sf-favorite-black"
+            data-metadata="achievement=oss-sf-favorite" style="width: 25px">
+            <a href="https://sourceforge.net/projects/raverules/" target="_blank">Rave</a>
+        </div>
+        <script>(function () { var sc = document.createElement('script'); sc.type = 'text/javascript'; sc.async = true; sc.src = 'https://b.sf-syn.com/badge_js?sf_id=3308011'; var p = document.getElementsByTagName('script')[0]; p.parentNode.insertBefore(sc, p); })();
+        </script>
+        <!-- End SF Tag -->
+        <a class="navbar-brand" href="index.html"><img src="assets/ravelogo.png" style="height: 34px; width: 35px;">
+            Rave</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Channels
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://t.me/RaveLavenderRelease">Lavender (Redmi note 7)</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://t.me/Peppe289Project">Personal channel</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#download">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="learn-to-build.html">Learn to build</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="padding-top: 10px;">
+        <div class="principale">
+            <h1 style="height: fit-content;">
+                How to build custom kernel?
+            </h1>
+            <p>It's easy!<br></p>
+            <p>BTW: If you want you can use the guide to compile with GCC
+                (<a href="https://forum.xda-developers.com/t/reference-how-to-compile-an-android-kernel.3627297/">XDA
+                    Link</a>)
+                or follow my guide.</p>
+            <h2 style="height: fit-content;">
+                Build with Proton Clang
+            </h2>
+            <p>Prerequisites:</p>
+            <ul>
+                <li>Download <a href="https://github.com/Peppe289/kernel_xiaomi_sdm660" target="_blank">Kernel
+                        source</a></li>
+                <li>Download <a href="https://github.com/kdrag0n/proton-clang" target="_blank">compiler</a></li>
+                <li>Linux environment</li>
+                <li>Good skills in C language (if you don't want to become a build bot)</li>
+                <li>Good git skills (if you don't want to mess with commits)</li>
+            </ul>
+            <h3>First step</h3>
+            <p>specify which architecture you want to build, and define where the compiler is.<br>
+                Use:</p>
+            <ul>
+                <li>PATH="<<none>proton-clang-dir>/clang/bin:${PATH}"</li>
+                <li>make O=out ARCH=arm64 <<none>defconfig></li>
+            </ul>
+            <p>Note: The defconfig the config of which files to compile, then drivers etc...<br>
+                If you use a defconfig not suitable for your device and for your sources the device may not start.
+                The defconfig is found in: "arch/arm64/configs/" sometimes you can also find it in
+                "arch/arm64/configs/vendor/"</p>
+            <h3>Second step</h3>
+            <p>Start to build.<br>Here you have to define how many CPU cores and which resources to use. I use:<br>
+                make -j$(nproc --all) O=out \<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                ARCH=arm64 \<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                CC=clang \<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                AR=llvm-ar \<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                NM=llvm-nm \<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                OBJCOPY=llvm-objcopy \<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                OBJDUMP=llvm-objdump \<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                STRIP=llvm-strip \<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                CROSS_COMPILE=aarch64-linux-gnu- \<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                CROSS_COMPILE_ARM32=arm-linux-gnueabi-<br></p>
+
+            <h3>Third step</h3>
+            <p>Create the kernel zip. here you have to use anykernel3.<br>
+                Inside the anykernel3 repository you will find the "anykernel.sh"
+                file that you will need to modify to define where to install the kernel (otherwise will fucking
+                everything).<br>
+                At the end copy the compiled kernel found in: "out/arch/arm64/boot/" into the anykernel archive.
+                Usually "Image.gz-dtb" is used (but you can get more if you have a dtbo). Now give the zip command and
+                enjoy!
+            </p>
+            <p>If your device is lavender or begonia you can use my anykernel. example:</p>
+            <ul>
+                <li>git clone --depth=1 https://github.com/Peppe289/AnyKernel3.git -b lavender anykernel</li>
+                <li>cp out/arch/arm64/boot/Image.gz-dtb anykernel</li>
+                <li>cd anykernel</li>
+                <li>zip -r9 Kernel.zip * -x .git README.md *placeholder</li>
+            </ul>
+            <p>Remember that you can create a script to automate everything!</p>
+        </div>
+        <footer>
+            <div class="left">
+                <div class="mini-box">
+                    <h1>
+                        Community
                     </h1>
-                    <p>It's easy!<br></p>
-                    <p>BTW: If you want you can use the guide to compile with GCC 
-                        (<a href="https://forum.xda-developers.com/t/reference-how-to-compile-an-android-kernel.3627297/">XDA Link</a>)
-                     or follow my guide.</p>
-                    <h2 style="height: fit-content;">
-                        Build with Proton Clang
-                    </h2>
-                    <p>Prerequisites:</p>
-                    <ul>
-                        <li>Download <a href="https://github.com/Peppe289/kernel_xiaomi_sdm660" target="_blank">Kernel source</a></li>
-                        <li>Download <a href="https://github.com/kdrag0n/proton-clang" target="_blank">compiler</a></li>
-                        <li>Linux environment</li>
-                        <li>Good skills in C language (if you don't want to become a build bot)</li>
-                        <li>Good git skills (if you don't want to mess with commits)</li>
-                    </ul>
-                    <h3>First step</h3>
-                    <p>specify which architecture you want to build, and define where the compiler is.<br>
-                    Use:</p>
-                    <ul>
-                        <li>PATH="<<none>proton-clang-dir>/clang/bin:${PATH}"</li>
-                        <li>make O=out ARCH=arm64 <<none>defconfig></li>
-                    </ul>
-                    <p>Note: The defconfig the config of which files to compile, then drivers etc...<br>
-                        If you use a defconfig not suitable for your device and for your sources the device may not start.
-                         The defconfig is found in: "arch/arm64/configs/" sometimes you can also find it in "arch/arm64/configs/vendor/"</p>
-                    <h3>Second step</h3>
-                    <p>Start to build.<br>Here you have to define how many CPU cores and which resources to use. I use:<br>
-                    make -j$(nproc --all) O=out \<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARCH=arm64 \<br>
-				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CC=clang \<br>
-				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AR=llvm-ar \<br>
-				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NM=llvm-nm \<br>
-				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OBJCOPY=llvm-objcopy \<br>
-				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OBJDUMP=llvm-objdump \<br>
-				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STRIP=llvm-strip \<br>
-				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CROSS_COMPILE=aarch64-linux-gnu- \<br>
-				    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CROSS_COMPILE_ARM32=arm-linux-gnueabi-<br></p>
-                    
-                    <h3>Third step</h3>
-                    <p>Create the kernel zip. here you have to use anykernel3.<br>
-                    Inside the anykernel3 repository you will find the "anykernel.sh"
-                     file that you will need to modify to define where to install the kernel (otherwise will fucking everything).<br>
-                    At the end copy the compiled kernel found in: "out/arch/arm64/boot/" into the anykernel archive.
-                    Usually "Image.gz-dtb" is used (but you can get more if you have a dtbo). Now give the zip command and enjoy!
-                    </p>
-                    <p>If your device is lavender or begonia you can use my anykernel. example:</p>
-                    <ul>
-                        <li>git clone --depth=1 https://github.com/Peppe289/AnyKernel3.git -b lavender anykernel</li>
-                        <li>cp out/arch/arm64/boot/Image.gz-dtb anykernel</li>
-                        <li>cd anykernel</li>
-                        <li>zip -r9 Kernel.zip * -x .git README.md *placeholder</li>
-                    </ul>
-                    <p>Remember that you can create a script to automate everything!</p>
+                    <p><a href="https://github.com/Rave-Project" target="_blank">GitHub</a></p>
+                    <p><a href="https://sourceforge.net/projects/raverules/files/" target="_blank">SourceForge</a></p>
+                    <p><a href="https://github.com/Peppe289" target="_blank">Developer</a></p>
                 </div>
-                <footer>
-                    <div class="left">
-                        <div class="mini-box">
-                            <h1>
-                                Community
-                            </h1>
-                            <p><a href="https://github.com/Rave-Project" target="_blank">GitHub</a></p>
-                            <p><a href="https://sourceforge.net/projects/raverules/files/" target="_blank">SourceForge</a></p>
-                            <p><a href="https://github.com/Peppe289" target="_blank">Developer</a></p>
-                        </div>
-                    </div>
-                    <div class="center">
-                        <div class="mini-box">
-                            <h1>
-                                Developers
-                            </h1>
-                            <p><a href="https://github.com/Peppe289/kernel_xiaomi_sdm660" target="_blank">Source Lavender</a></p>
-                            <p><a href="https://github.com/Peppe289/kernel_begonia" target="_blank">Source Begonia</a></p>
-                            <p><a href="credits.html">Contribute</a></p>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="mini-box">
-                            <h1>Resource</h1>
-                            <p><a href="https://peppe289.github.io/" target="_blank">Personal Website</a></p>
-                            <p><a href="https://www.paypal.me/GSperanza487" target="_blank">Donate</a></p>
-                            <p><a href="report.html">Report Issues</a></p>
-                        </div>
-                    </div>
-                    <img class="view" src="https://gpvc.arturio.dev/rave-project">
-                    <a class="view-download" href="https://sourceforge.net/projects/raverules/files/latest/download">
-                        <img alt="Download Rave" src="https://img.shields.io/sourceforge/dt/raverules.svg" >
-                    </a>
-                    <a href="https://sourceforge.net/p/raverules/">
-                        <img alt="Download Rave" src="https://sourceforge.net/sflogo.php?type=17&group_id=3308011" width=200>
-                    </a>
-                </footer>
             </div>
-        </body>
-    </head>
+            <div class="center">
+                <div class="mini-box">
+                    <h1>
+                        Developers
+                    </h1>
+                    <p><a href="https://github.com/Peppe289/kernel_xiaomi_sdm660" target="_blank">Source Lavender</a>
+                    </p>
+                    <p><a href="https://github.com/Peppe289/kernel_begonia" target="_blank">Source Begonia</a></p>
+                    <p><a href="credits.html">Contribute</a></p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="mini-box">
+                    <h1>Resource</h1>
+                    <p><a href="https://peppe289.github.io/" target="_blank">Personal Website</a></p>
+                    <p><a href="https://www.paypal.me/GSperanza487" target="_blank">Donate</a></p>
+                    <p><a href="report.html">Report Issues</a></p>
+                </div>
+            </div>
+            <img class="view" src="https://gpvc.arturio.dev/rave-project">
+            <a class="view-download" href="https://sourceforge.net/projects/raverules/files/latest/download">
+                <img alt="Download Rave" src="https://img.shields.io/sourceforge/dt/raverules.svg">
+            </a>
+            <a href="https://sourceforge.net/p/raverules/">
+                <img alt="Download Rave" src="https://sourceforge.net/sflogo.php?type=17&group_id=3308011" width=200>
+            </a>
+        </footer>
+    </div>
+</body>
+</head>
+
 </html>
