@@ -1,0 +1,129 @@
+
+body > span, html > span {
+    display: block;
+    height: 30px;
+    height: 2px;
+    background-color: orange;
+}
+
+.download {
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+}
+
+.box {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    border-radius: 30px;
+    color: white;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    background-color: rgb(59, 59, 255);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1300px) {
+    .box {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+
+.rotate-block {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    min-height: 150%;
+    background: rgb(76, 76, 228);
+    transform: rotate(-60deg);
+    left: -60%;
+}
+
+.rotate-block::after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    min-height: 150%;
+    background: rgb(76, 76, 228);
+    transform: rotate(120deg);
+    left: -43%;
+}
+
+.open {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    min-height: 250%;
+    cursor: pointer;
+    transition: .8s ease-in-out;
+}
+
+.open:hover {
+    background: rgb(59, 59, 61);
+    transform: translateY(-40%);
+    transition: .8s ease-in-out;
+}
+
+.open .scroll {
+    top: 350px;
+    height: 300px;
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+.open .desc {
+    position: absolute;
+    top: 50px;
+    display: block;
+    height: 300px;
+    width: 100%;
+    /*
+    align-items: center;
+    justify-items: center; */
+}
+
+.open .desc h1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-weight: bolder;
+}
+
+.open .desc h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: normal;
+}
+
+.open .desc p {
+    font-size: 18px;
+    margin-top: 100px;
+    padding: 0;
+    width: 100%;
+    font-family: Arial;
+    font-weight: bolder;
+}
+
+.open .scroll h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.open .scroll p {
+    margin: 20px;
+}
+
+
+

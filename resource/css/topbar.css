@@ -1,0 +1,111 @@
+#TopBar {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    width: 100%;
+/*    background-color: rgb(111, 111, 165); */
+    background-color: rgb(255, 182, 47);
+    z-index: 999;
+}
+
+.space {
+    width: calc(100% - 300px);
+    display: inline-flex;
+    background-color: rgb(255, 182, 47);
+}
+
+.space img {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.space p {
+    color:rgb(0, 92, 230);
+    font-family: Arial;
+    font-weight: bolder;
+}
+
+#TopBar span {
+    border-right: 3px solid black;
+    display: block;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#TopBar > ul {
+/*    background-color: rgb(107, 107, 219);*/
+    background-color: orange;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#TopBar > ul > li {
+    list-style-type: none;
+    width: 100px;
+    height: 50px;
+}
+
+#TopBar a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#TopBar a:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .space {
+        display: none;
+    }
+
+    #TopBar {
+        justify-content: flex-start;
+    }
+}
+
+.toolbar {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black
+}
+
+.childToolBar {
+    background-color: rgb(255, 193, 78);
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    transition: height 0.3s;
+}
+
+.toolbar:hover + .childToolBar {
+    height: 100px;
+    transition: height 0.3s;
+    overflow: hidden;
+}
+
+.childToolBar:hover {
+    height: 100px;
+    overflow: hidden;
+}
+
+#TopBar > ul > li > .childToolBar > a {
+    height: 30%;
+    margin: 0;
+    padding: 0;
+}

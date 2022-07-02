@@ -1,0 +1,37 @@
+footer {
+    height: 200px;
+    background-color: rgb(14, 14, 14);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+footer div {
+    padding: 20px;
+    display: inline-block;
+}
+
+footer p {
+    margin: 0;
+    color: rgba(223, 223, 223, 0.863);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+footer ul {
+    text-align: left;
+    list-style-type: none;
+    padding: 2px;
+    margin: 5px;
+}
+
+footer ul a {
+    color: rgba(255, 255, 255, 0.568);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+footer ul a:hover {
+    color: rgb(82, 85, 253);
+    text-decoration: underline;
+}

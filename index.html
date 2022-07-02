@@ -1,287 +1,111 @@
-<!doctype html>
-<html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="author" content="Peppe289">
-<meta property="og:title" content="Rave Environment">
-<meta name="description" content="Download and info">
-<meta property="og:site_name" content="Rave">
-<title>Rave</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-<link rel="icon" type="image/x-icon" href="assets/ravelogo.png">
-<link rel="stylesheet" type="text/css" href="css/title.css" />
-<link rel="stylesheet" type="text/css" href="css/description.css" />
-<link rel="stylesheet" type="text/css" href="css/feature.css" />
-<link rel="stylesheet" type="text/css" href="css/footer.css" />
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Peppe289">
+        <meta property="og:title" content="Rave Kernel">
+        <meta name="description" content="Info & Download">
+        <meta property="og:site_name" content="Rave">
 
-<head>
+        <link rel="stylesheet" type="text/css" href="./resource/css/topbar.css">
+        <link rel="stylesheet" type="text/css" href="./resource/css/banner.css">
+        <link rel="stylesheet" type="text/css" href="./resource/css/blob.css">
+        <link rel="stylesheet" type="text/css" href="./resource/css/infobox.css">
+        <link rel="stylesheet" type="text/css" href="./resource/css/button.css">
+        <link rel="stylesheet" type="text/css" href="./resource/css/footer.css">
+
+        <title>Rave</title>
+    </head>
     <style>
-        .hide {
-            display: none;
-        }
-
-        #box {
+        body {
+            margin: 0;
             scroll-behavior: smooth;
         }
+
+        :root {
+            scroll-behavior: smooth;
+        }
+
     </style>
-
-<body>
-    <div id="box">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- Begin SF Tag -->
-            <div class="sf-root hide-orizontal" data-id="3308011" data-badge="oss-sf-favorite-black"
-                data-metadata="achievement=oss-sf-favorite" style="width: 25px">
-                <a href="https://sourceforge.net/projects/raverules/" target="_blank">Rave</a>
+    <body>
+        <div id="TopBar" class="menu">
+            <div class="space">
+                <img class="blob" src="./resource/img/ravelogo.png" alt="logo">
+                <p>Rave</p>
             </div>
-            <script>(function () { var sc = document.createElement('script'); sc.type = 'text/javascript'; sc.async = true; sc.src = 'https://b.sf-syn.com/badge_js?sf_id=3308011'; var p = document.getElementsByTagName('script')[0]; p.parentNode.insertBefore(sc, p); })();
-            </script>
-            <!-- End SF Tag -->
-            <a class="navbar-brand" href="#"><img src="assets/ravelogo.png" style="height: 34px; width: 35px;"> Rave</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Channels
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://t.me/RaveLavenderRelease">Lavender (Redmi note 7)</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="https://t.me/Peppe289Project">Personal channel</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#download">Download</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="learn-to-build.html">Learn to build</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="first-title">
-            <h1>
-                Welcome
-            </h1>
-            <h2>
-                to Rave Environment!
-            </h2>
-        </div>
-        <div class="feature" style="border: none">
-            <div class="left">
-                <a href="#download" style="text-decoration: none;">
-                    <div class="mini-box bounce" style="border-radius: 24px;
-                                                        height: fit-content;
-                                                        box-shadow: 0 4px 16px rgba(0,0,0,.6);
-                                                        background-color: white;
-                                                        padding-top: 1px;
-                                                        padding-bottom: 3px">
-                        <h1>
-                            Rave Kernel
-                        </h1>
-                        <p class="desc">
-                            Rave brand kernels available for Redmi note 7/7s and Redmi note 8 Pro.
-                        </p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <span></span>
+                <li><a href="#download">Download</a></li>
+                <span></span>
+                <li>
+                    <div class="toolbar">
+                        <a href="">Source</a>
                     </div>
-                </a>
-            </div>
-            <div class="right">
-                <a href="#download" style="text-decoration: none;">
-                    <div class="mini-box bounce" style="border-radius: 24px;
-                                                        height: fit-content;
-                                                        box-shadow: 0 4px 16px rgba(0,0,0,.6);
-                                                        background-color: white;
-                                                        padding-top: 1px;
-                                                        padding-bottom: 3px">
-                        <h1>
-                            Rave Tool
-                        </h1>
-                        <p class="desc">
-                            A kernel management tool for x86_64 platforms. Written in Cpp, it can be used to change
-                            linux kernel parameters.
-                        </p>
+                    <div class="childToolBar">
+                        <a href="https://github.com/Peppe289/kernel_xiaomi_sdm660" style="padding-top: 10px">Lavender</a><br>
+                        <a href="https://github.com/Peppe289/kernel_begonia">Begonia</a>
                     </div>
-                </a>
-            </div>
+                </li>
+            </ul>
         </div>
-        <div class="feature">
-            <div class="left" style="padding-top: 30px; text-align: center;">
-                <h1 class="hide-orizontal">
-                    Toggle for Hz!
-                </h1>
-                <div class="fix-center padding-fix">
-                    <iframe src="https://www.youtube.com/embed/mBP8wTXp4Uo" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; 
-                            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="right">
-                <div class="padding-fix">
-                    <h1 class="hide-vertical">
-                        Toggle for Hz!
-                    </h1>
-                    <ul>
-                        <li>On lavender you can increase battery life without reducing performance</li>
-                        <li>Manage your screen efficiently by adapting it to your use</li>
-                    </ul>
-                    <p style="text-align: center; width: 100%; padding-top: 30px;"><a
-                            href="changelog.html#custom-feature">learn more</a></p>
-                </div>
-            </div>
+        <div class="blob-low" id="Banner">
+            <div></div>
+            <h1>Show all of your power with rave!</h1>
         </div>
-        <div class="feature">
-            <div class="right" style="padding-top: 30px; text-align: center;">
-                <h1 class="hide-orizontal">
-                    In a parallel world...
-                </h1>
-                <div class="fix-center padding-fix">
-                    <img src="assets/core-config.jpg" alt="core-config" style="border-radius: 10px;">
+        <span></span>
+        <div class="download">
+            <a name="download"></a>
+            <div class="box lavender">
+                <div class="rotate-block"></div>
+                <div class="open">
+                    <div class="desc">
+                        <h1>Lavender</h1>
+                        <h2>(Redmi note 7)</h2>
+                        <p>Read About it</p>
+                    </div>
+                    <div class="scroll">
+                        <h1>Read More</h1>
+                        <p>
+                            Rave Kernel for lavender is based on linux 4.4.y<br>
+                            Always updated, offers the device balanced performance.
+                        </p>
+                        <form action="https://sourceforge.net/projects/raverules/files/Rave%20Kernel/" target="_blank">
+                            <button class="line-btn" href="">Download</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="left">
-                <div class="padding-fix">
-                    <h1 class="hide-vertical">
-                        In a parallel world...
-                    </h1>
-                    <ul>
-                        <li>Lavender SoC have 6 little core and 2 big core</li>
-                        <li>It has better fluidity of the UI</li>
-                    </ul>
-                    <p style="text-align: center; width: 100%; padding-top: 30px;"><a
-                            href="changelog.html#custom-feature">learn more</a></p>
-                </div>
-            </div>
-        </div>
-        <a name="download"></a>
-        <div style="border-top-color: rgb(194, 194, 194); 
-                            border-top-style: solid;
-                            border-top-width: 1.5px;
-                            border-bottom-color: white;">
-            <div class="left" style="padding-left: 20px; padding-right: 20px;">
-                <div class="mini-box" style="border-radius: 24px;
-                                                    height: fit-content;
-                                                    box-shadow: 0 4px 16px rgba(0,0,0,.6);
-                                                    background-color: white;
-                                                    padding-top: 1px;
-                                                    padding-bottom: 3px;">
-                    <h1>
-                        Redmi note 7<br>
-                        (EOL)
-                    </h1>
-                    <a href="changelog.html#lavender" style="text-decoration: none; color: rgb(255, 255, 255);">
-                        <p class="link-ref" style="font-size: 20px;">
-                            Changes
+            <div class="box begonia">
+                <div class="rotate-block"></div>
+                <div class="open">
+                    <div class="desc">
+                        <h1>Begonia</h1>
+                        <h2>(Redmi note 8 pro)</h2>
+                        <p>Read About it</p>
+                    </div>
+                    <div class="scroll">
+                        <h1>Read More</h1>
+                        <p>
+                            Rave Kernel for Begonia was built for performance. Currently the project is dropped.
                         </p>
-                    </a>
-                    <a href="https://sourceforge.net/projects/raverules/files/Rave%20Kernel/"
-                        style="text-decoration: none; color: rgb(255, 255, 255);" target="_blank">
-                        <p class="link-ref" style="font-size: 20px;">
-                            Download
-                        </p>
-                    </a>
-                </div>
-            </div>
-            <div class="center" style="padding-left: 20px; padding-right: 20px;">
-                <div class="mini-box" style="border-radius: 24px;
-                                                    height: fit-content;
-                                                    box-shadow: 0 4px 16px rgba(0,0,0,.6);
-                                                    background-color: white;
-                                                    padding-top: 1px;
-                                                    padding-bottom: 3px;">
-                    <h1>
-                        Redmi note 8 Pro<br>
-                        v1.9
-                    </h1>
-                    <a href="changelog.html#begonia" style="text-decoration: none; color: rgb(255, 255, 255);">
-                        <p class="link-ref" style="font-size: 20px;">
-                            Changes
-                        </p>
-                    </a>
-                    <a href="https://sourceforge.net/projects/raverules/files/Rave%20Kernel%20Begonia/Rave-Begonia-v1.9.zip/download"
-                        style="text-decoration: none; color: rgb(255, 255, 255);" target="_blank">
-                        <p class="link-ref" style="font-size: 20px;">
-                            Download
-                        </p>
-                    </a>
-                </div>
-            </div>
-            <div class="right" style="padding-left: 20px; padding-right: 20px;">
-                <div class="mini-box" style="border-radius: 24px;
-                                                    height: fit-content;
-                                                    box-shadow: 0 4px 16px rgba(0,0,0,.6);
-                                                    background-color: white;
-                                                    padding-top: 1px;
-                                                    padding-bottom: 3px;">
-                    <h1>
-                        Rave Tool x86_64<br>
-                        beta
-                    </h1>
-                    <a href="https://sourceforge.net/projects/raverules/files/Rave-tool/ravetool-beta-0.2-x86_64/download"
-                        style="text-decoration: none; color: rgb(255, 255, 255);" target="_blank">
-                        <p class="link-ref" style="font-size: 20px;">
-                            Download
-                        </p>
-                    </a>
+                        <form action="https://sourceforge.net/projects/raverules/files/Rave%20Kernel%20Begonia/" target="_blank">
+                            <button class="line-btn" href="">Download</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="left">
-                <div class="mini-box">
-                    <h1>
-                        Community
-                    </h1>
-                    <p><a href="https://github.com/Rave-Project" target="_blank">GitHub</a></p>
-                    <p><a href="https://sourceforge.net/projects/raverules/files/" target="_blank">SourceForge</a></p>
-                    <p><a href="https://github.com/Peppe289" target="_blank">Developer</a></p>
-                </div>
-            </div>
-            <div class="center">
-                <div class="mini-box">
-                    <h1>
-                        Developers
-                    </h1>
-                    <p><a href="https://github.com/Peppe289/kernel_xiaomi_sdm660" target="_blank">Source Lavender</a>
-                    </p>
-                    <p><a href="https://github.com/Peppe289/kernel_begonia" target="_blank">Source Begonia</a></p>
-                    <p><a href="credits.html">Contribute</a></p>
-                </div>
-            </div>
-            <div class="right">
-                <div class="mini-box">
-                    <h1>Resource</h1>
-                    <p><a href="https://peppe289.github.io/" target="_blank">Personal Website</a></p>
-                    <p><a href="https://www.paypal.me/GSperanza487" target="_blank">Donate</a></p>
-                    <p><a href="report.html">Report Issues</a></p>
-                </div>
-            </div>
-            <img class="view" src="https://gpvc.arturio.dev/rave-project">
-            <a class="view-download" href="https://sourceforge.net/projects/raverules/files/latest/download">
-                <img alt="Download Rave" src="https://img.shields.io/sourceforge/dt/raverules.svg">
-            </a>
-            <a href="https://sourceforge.net/p/raverules/">
-                <img alt="Download Rave" src="https://sourceforge.net/sflogo.php?type=17&group_id=3308011" width=200>
-            </a>
-        </footer>
-    </div>
-</body>
-</head>
-<script src="js/main.js"></script>
-
+    </body>
+    <span></span>
+    <footer>
+        <div>
+            <p>Resource</p>
+            <ul>
+                <li><a href="https://github.com/Peppe289">GitHub</a></li>
+                <li><a href="https://peppe289.github.io/">Dev Profile</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./resource/js/wheel-act.js"></script>
 </html>
