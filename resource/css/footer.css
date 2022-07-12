@@ -1,24 +1,40 @@
 footer {
-    height: 250px;
+    height: auto;
     background-color: rgb(14, 14, 14);
     width: 100%;
+    padding-bottom: 20px;
 }
 
 footer .list {
-    display: flex;
+    display: block;
+    text-align: center;
 }
 
 footer .long {
     display: block;
+    width: 100%;
+    text-align: center;
 }
 
 footer .block {
     height: calc(100% - 40px);
     margin: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+    text-align: left;
+}
+
+@media only screen and (min-width: 1300px) {
+    footer .block {
+        margin-right: 8%;
+        margin-left: 8%;
+    }
 }
 
 footer .fotcolor {
     color: rgba(223, 223, 223, 0.863);
+    width: 100%;
 }
 
 footer p {
