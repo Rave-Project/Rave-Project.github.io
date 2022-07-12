@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Peppe289">
+    <meta property="og:title" content="Rave Kernel">
+    <meta name="description" content="FAQ">
+    <meta property="og:site_name" content="Rave">
+
+    <link rel="stylesheet" type="text/css" href="./resource/css/topbar.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/faq.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/side_scroll_bar.css">
+
+    <title>Rave FAQ</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        scroll-behavior: smooth;
+        background-color: black;
+    }
+
+    :root {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<body>
+    <div id="TopBar" class="menu">
+        <div class="space">
+            <img class="blob" src="./resource/img/ravelogo.png" alt="logo">
+            <p>Rave</p>
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <span></span>
+            <li><a href="./index.html#download">Download</a></li>
+            <span></span>
+            <li>
+                <div class="toolbar">
+                    <a>Source</a>
+                </div>
+                <div class="childToolBar">
+                    <a href="https://github.com/Peppe289/kernel_xiaomi_lavender">Lavender</a>
+                    <a href="https://github.com/Peppe289/kernel_begonia">Begonia</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="toggle-helper"><p class="text all-close">Open All</p></div>
+
+    <section class="faq-container">
+        <hr class="hr-line">
+        <div>
+            <!-- faq question -->
+            <h1 class="faq-page">What is Rave?</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p>Rave is a project that concerns linux software, 
+                    specifically the kernel. Official releases currently 
+                    include Redmi Note 7 and Redmi Note 8 Pro.</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div>
+            <!-- faq question -->
+            <h1 class="faq-page">Sir can you do OverClock?</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p>Currently the versions for Redmi Note 7 do not 
+                    include OC of any kind. Unlike for Redmi Note 8 Pro 
+                    there is an OC GPU at 850Mhz.</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div>
+            <!-- faq question -->
+            <h1 class="faq-page">Sir my phone exploded with your kernel!</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p>Any responsibility for damage caused by modding is 
+                    yours. I'm not responsible for nuclear explosions 
+                    either... So buy a new phone!</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div>
+            <!-- faq question -->
+            <h1 class="faq-page">Is this a gaming or BB kernel?</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p>Stop asking it! It is not a specific kernel. It 
+                    is useless to classify it. behaves according to usage.</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div>
+            <!-- faq question -->
+            <h1 class="faq-page">When next release?</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p>I have a life! I don't know when I will have time 
+                    to devote to development</p>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div>
+            <!-- faq question -->
+            <h1 class="faq-page">The kernel is not working well!</h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p>Get the ROM and kernel log and send it to the 
+                    developer. <a href="">find how</a></p>
+            </div>
+        </div>
+        <hr class="hr-line">
+    </section>
+</body>
+<script>
+    var faq = document.getElementsByClassName("faq-page");
+    var i;
+
+    for (i = 0; i < faq.length; i++) {
+        faq[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+        });
+    }
+
+
+    // open and close all 
+    var toggle_helper = document.getElementsByClassName("toggle-helper");
+    var isOpen = 0;
+    var k;
+    var text = document.getElementsByClassName("text");
+    toggle_helper[0].addEventListener("click", function () {
+        if (isOpen == 0) {
+            text[0].classList.remove("all-close");
+            text[0].classList.add("all-open");
+        } else {
+            text[0].classList.remove("all-open");
+            text[0].classList.add("all-close");
+        }
+
+        for (k = 0; k != faq.length; ++k) {
+            if (isOpen == 0) {
+                faq[k].classList.add("active");
+            } else {
+                faq[k].classList.remove("active");
+            }
+        }
+
+        if (isOpen == 0) {
+            isOpen = 1;
+        } else {
+            isOpen = 0;
+        }
+    });
+</script>
+
+</html>
