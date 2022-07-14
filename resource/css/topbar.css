@@ -10,7 +10,7 @@
 }
 
 .space {
-    width: calc(100% - 300px);
+    width: calc(100% - 400px);
     display: inline-flex;
     background-color: rgb(255, 182, 47);
 }
