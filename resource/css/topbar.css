@@ -111,3 +111,14 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.toolbar:hover p {
+    color: white;
+}
+
+.toolbar p {
+    margin: 0px;
+    position: relative;
+    top: calc(50% - 8px);
+    padding: 0px;
+}
