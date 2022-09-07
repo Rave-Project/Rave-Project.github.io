@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Peppe289">
     <meta property="og:title" content="Rave Kernel">
-    <meta name="description" content="Info & Download">
+    <meta name="description" content="Lavender page">
     <meta property="og:site_name" content="Rave">
 
     <link rel="stylesheet" type="text/css" href="./resource/css/topbar.css">
@@ -16,10 +16,11 @@
     <link rel="stylesheet" type="text/css" href="./resource/css/footer.css">
     <link rel="stylesheet" type="text/css" href="./resource/css/zoom.css">
     <link rel="stylesheet" type="text/css" href="./resource/css/side_scroll_bar.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/lavender.css">
 
     <link rel="icon" type="image/x-icon" href="resource/img/ravelogo.png">
 
-    <title>Rave</title>
+    <title>Lavender</title>
 </head>
 <style>
     body {
@@ -39,9 +40,9 @@
             <p>Rave</p>
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <span></span>
-            <li><a href="#download">Download</a></li>
+            <li><a href="https://sourceforge.net/projects/raverules/files/Rave%20Kernel/">Download</a></li>
             <span></span>
             <li>
                 <div class="toolbar">
@@ -64,53 +65,93 @@
             </li>
         </ul>
     </div>
-    <div class="blob-low" id="Banner">
-        <div></div>
-        <h1>Show all of your power with rave!</h1>
+    <div class="lavender-title">
+        <h1>Lavender changelog</h1>
+    </div>
+    <div class="lavender-body">
+        <h3>What will you find here?</h3>
+        <ul>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#dtsi">Custom DTSI</a></li>
+        </ul>
     </div>
     <span></span>
-    <div class="download">
-        <a name="download" style="position: absolute; top: 700px"></a>
-        <div class="box lavender bounce">
-            <div class="rotate-block"></div>
-            <div class="open">
-                <div class="desc">
-                    <h1>Lavender</h1>
-                    <h2>(Redmi note 7)</h2>
-                    <p>Read About it</p>
-                </div>
-                <div class="scroll">
-                    <h1>Read More</h1>
-                    <p>
-                        Rave Kernel for lavender is based on linux 4.4.y<br>
-                        Always updated, offers the device balanced performance.
-                    </p>
-                    <form action="./lavender.html">
-                        <button class="line-btn" href="./lavender.html">More</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="box begonia bounce">
-            <div class="rotate-block"></div>
-            <div class="open">
-                <div class="desc">
-                    <h1>Begonia</h1>
-                    <h2>(Redmi note 8 pro)</h2>
-                    <p>Read About it</p>
-                </div>
-                <div class="scroll">
-                    <h1>Read More</h1>
-                    <p>
-                        Rave Kernel for Begonia was built for performance. Currently the project is dropped.
-                    </p>
-                    <form action="https://sourceforge.net/projects/raverules/files/Rave%20Kernel%20Begonia/"
-                        target="_blank">
-                        <button class="line-btn" href="">Download</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <div class="lavender-body">
+        <a name="download"
+            style="position: relative; top: -55px"></a>
+        <h3>
+            Download (last version)
+        </h3>
+        <ul>
+            <li><a href="https://sourceforge.net/projects/raverules/files/Rave%20Kernel/Rave-EAS-oldcam-v4.4.zip/download"
+                target="_blank">EAS-oldcam</a>
+            </li>
+            <li><a href="https://sourceforge.net/projects/raverules/files/Rave%20Kernel/Rave-EAS-newcam-v4.4.zip/download"
+                target="_blank">EAS-newcam</a>
+            </li>
+            <li><a href="https://sourceforge.net/projects/raverules/files/Rave%20Kernel/Rave-EAS-qti-v4.4.zip/download"
+                target="_blank">EAS-qti</a>
+            </li>
+        </ul>
+    </div>
+    <span></span>
+    <div class="lavender-body">
+        <a name="changelog"
+            style="position: relative; top: -55px"></a>
+        <h3>Changelog</h3>
+        <p>Rave 4.4</p>
+        <ul>
+            <li>sched: switch to WALT</li>
+            <li>Fix dt2w</li>
+            <li>Fix leds</li>
+            <li>Add 0,9 - 0,6 - 0,4 Ghz to big cluster</li>
+            <li>Fix other error in scheduler</li>
+            <li>Update schedutil governor</li>
+            <li>Add support for android 13</li>
+        </ul>
+        <p>Rave 4.3</p>
+        <ul>
+            <li>Add DriveDroid support</li>
+            <li>Add kcal</li>
+            <li>GPU: Remove pwrlevel control</li>
+            <li>Disable KPTI</li>
+            <li>sched: import some 4.19 improvements</li>
+        </ul>
+        <p>Rave 4.2</p>
+        <ul>
+            <li>Add sound control</li>
+            <li>ZRAM: switch to lz4 by default</li>
+            <li>Disable SPI CRC</li>
+            <li>Disable DebugFS</li>
+            <li>Little tweak CPU latency</li>
+            <li>Disabel touchscreen selftest</li>
+        </ul>
+        <p>Rave 4.1</p>
+        <ul>
+            <li>Based on lineage Kernel</li>
+            <li>Update staging drivers to LA.UM.7.2.r1-09400-sdm660.0</li>
+            <li>Backport BPF</li>
+            <li>Use PELT in scheduler</li>
+            <li>Disable AUDIT</li>
+            <li>Disable ACPI drivers</li>
+            <li>Drop adaptive_lmk</li>
+            <li>Clean up caff stuff</li>
+            <li>CPU: UV by -80mV</li>
+            <li>GPU: UV by -40mV</li>
+        </ul>
+    </div>
+    <span></span>
+    <div class="lavender-body">
+        <a name="dtsi"
+            style="position: relative; top: -55px"></a>
+        <h3>Custom DTSI</h3>
+        <p>What can you do here? you can change the 
+            frequencies of your kernel. in fact on qcom 
+            the frequencies are controlled by the DTSI 
+            which are external to the kernel code.</p>
+        
+        <p>PAGE NOT READY!!!</p>
     </div>
 </body>
 <span></span>
@@ -159,6 +200,8 @@
         </div>
     </div>
 </footer>
-<script src="./resource/js/wheel-act.js"></script>
+<script>
+
+</script>
 
 </html>
