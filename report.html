@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Peppe289">
+    <meta property="og:title" content="Rave Kernel">
+    <meta name="description" content="FAQ">
+    <meta property="og:site_name" content="Rave">
+
+    <link rel="stylesheet" type="text/css" href="./resource/css/topbar.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/side_scroll_bar.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/lavender.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/banner.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/blob.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/infobox.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/button.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/zoom.css">
+
+    <link rel="icon" type="image/x-icon" href="resource/img/ravelogo.png">
+
+    <title>Report Issues</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+
+    :root {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<body>
+    <div id="TopBar" class="menu">
+        <div class="space">
+            <img class="blob" src="./resource/img/ravelogo.png" alt="logo">
+            <p>Rave</p>
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <span></span>
+            <li><a href="./index.html#download">Download</a></li>
+            <span></span>
+            <li>
+                <div class="toolbar">
+                    <p>Support</p>
+                </div>
+                <div class="childToolBar">
+                    <a href="https://t.me/RaveProjectChat">Dev Chat</a>
+                    <a href="https://t.me/RaveRelease">Channel</a>
+                </div>
+            </li>
+            <span></span>
+            <li>
+                <div class="toolbar">
+                    <p>Source</p>
+                </div>
+                <div class="childToolBar">
+                    <a href="https://github.com/Peppe289/kernel_xiaomi_lavender">Lavender</a>
+                    <a href="https://github.com/Peppe289/kernel_begonia">Begonia</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="lavender-title">
+        <h1>How to report issues?</h1>
+    </div>
+    <div class="lavender-body">
+        <p>
+            If the kernel not work well you can report me the issues with log/kmsg. <br>
+            First, before reporting any problems make sure it is a kernel problem, 
+            and you have installed last version of Rave kernel from official 
+            download link.
+        </p>
+
+        <h3>With phone booted and root:</h3>
+        <ul>
+            <li>Use FK Manager for export Kmsg (ask in support group for apk);</li>
+            <li>Use "adb logcat | tee log.txt" from PC and send log.txt file.</li>
+        </ul>
+        <h3>With phone not booted or without root:</h3>
+        <ul>
+            <li>Go to recovery and take /proc/last_kmsg file;</li>
+        </ul>
+        <h3>If Phone booted:</h3>
+        <ul>
+            <li>Take also ROM log with "adb logcat | tee log.txt" and send log.txt file.</li>
+        </ul>
+        <p>
+            When you report a problem make sure you are willing to take a possible test to help me solve it.
+        </p>
+    </div>
+    <span></span>
+    <div class="lavender-body">
+        <h3>Common issues (lavender):</h3>
+        <ul>
+            <li>Lavender ROM use also QTI drivers. Flash right kernel version;</li>
+            <li>Some lavender ROM support linux 4.19.y and Rave kernel for lavender is linux 4.4.y;</li>
+            <li>If camera not work make sure you have installed right version of camera (oldcam or newcam). QTI is oldcam.</li>
+        </ul>
+    </div>
+    <span></span>
+</body>
+<footer>
+    <div class="list">
+        <div class="block">
+            <p class="fotcolor">Resource</p>
+            <ul>
+                <li><a href="https://github.com/Peppe289">GitHub</a></li>
+                <li><a href="https://peppe289.github.io/">Dev Profile</a></li>
+                <li><a href="./FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="block">
+            <p class="fotcolor">Source</p>
+            <ul>
+                <li><a href="https://github.com/Peppe289/kernel_xiaomi_lavender">Lavender</a></li>
+                <li><a href="https://github.com/Peppe289/kernel_begonia">Begonia</a></li>
+                <li><a href="https://github.com/Rave-Project/Rave-Project.github.io">Web Page</a></li>
+            </ul>
+        </div>
+        <div class="block">
+            <p class="fotcolor">Channel</p>
+            <ul>
+                <li><a href="https://t.me/RaveRelease">Lavender Release</a></li>
+                <li><a href="https://t.me/Ravedb">Crazy build</a></li>
+                <li><a href="https://t.me/Peppe289Project">Dev Channel</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="long fotcolor">
+        <div class="block">
+            <a href="https://sourceforge.net/p/raverules/" target="_blank">
+                <img alt="Download Rave" src="https://sourceforge.net/sflogo.php?type=17&group_id=3308011" width=200>
+            </a>
+        </div>
+        <div class="block">
+            <a href="https://sourceforge.net/projects/raverules/files/" target="_blank">
+                <img src="https://img.shields.io/sourceforge/dt/raverules.svg" alt="Total Download">
+            </a>
+        </div>
+        <div class="block">
+            <a href="https://gpvc.arturio.dev/rave-project">
+                <img src="https://gpvc.arturio.dev/rave-project" alt="Page View">
+            </a>
+        </div>
+    </div>
+</footer>
+</html>
